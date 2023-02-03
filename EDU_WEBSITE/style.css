@@ -456,3 +456,34 @@ h3 {
 .fa-heart-o:hover {
     color: red;
 }
+
+/* Scroll Top */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    /* font-size: 18px; */
+    border: none;
+    outline: none;
+    /* background-color: red; */
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 50px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+    box-shadow: -1px 1px 5px 0px rgba(251, 0, 0, 0.75);
+  }
+  @media(max-width: 700px) {
+    #myBtn {
+      display: none;
+      right: 8px;
+    }
+  }
