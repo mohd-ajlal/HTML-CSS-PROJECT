@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="">COURSE</a>
+                    </li>
+                    <li>
+                        <a href="">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>
+            About Us
+        </h1>
+    </section>
+
+   <!------------------About us content-->
+   <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are world's lagerst University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt harum voluptate aut
+                officiis tempora quisquam nam, quaerat, delectus modi nisi aspernatur reprehenderit voluptatibus
+                nesciunt. Quibusdam tempore est ea ab architecto unde optio illum sunt. In porro eius eligendi
+                repellendus quidem nemo nam modi necessitatibus, facere unde. Ipsa, repellendus vel!</p>
+            <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+
+        <div class="about-col">
+            <img src="images/about1.jpg">
+        </div>
+    </div>
+</section>
+
+<hr>
+        <!-- Footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+
+            </div>
+            <p>
+                Made with <i class="fa fa-heart-o"></i> by <a href="https://www.instagram.com/mohd-ajlal/">Mohd
+                    Ajlal</a>
+            </p>
+
+
+            <!-- JAVASCRIPT For Toggle menu -->
+
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+                function hideMenu() {
+                    navLinks.style.right = "-200px";
+                }
+
+            </script>
+
+            <!-- JAVASCRIPT For Scroll Top -->
+
+
+            <script>
+                // Get the button
+                let mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () { scrollFunction() };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+
+
+
+</body>
+
+</html>
