@@ -540,3 +540,86 @@ h3 {
     background: #f44336;
     color: #fff;
 }   
+
+/* _________________________________________ */
+/*-------------- Blog PAGE ----------------- */
+/* _________________________________________ */
+
+.blog-content {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.blog-left {
+    flex-basis: 65%;
+
+}
+
+.blog-left img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.blog-left h2 {
+    color: #222;
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+.blog-left p {
+    color: #999;
+    padding: 0;
+}
+
+.blog-right {
+    flex-basis: 32%;
+}
+
+.blog-right h3 {
+    background: #f44336;
+    color: white;
+    padding: 7px 0px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 9px;
+    box-sizing: border-box;
+}
+
+.comment-box {
+    border: 1px solid #f44336;
+    margin: 50px 0;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+.comment-box h3 {
+    text-align: left;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+@media (max-width:700px) {
+    .sub-header h1 {
+        font-size: 25px;
+    }
+}
