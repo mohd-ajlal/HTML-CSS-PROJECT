@@ -90,10 +90,10 @@
 
                 <div class="comment-box">
                     <h3>Leave a comment</h3>
-                    <form class="comment-form">
-                        <input type="name" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <textarea type="text" rows="5" placeholder="Your comment"></textarea>
+                    <form class="comment-form" action="form-comment.php" method="post">
+                        <input type="name" name="name" placeholder="Username" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea type="text" name="message" rows="5" placeholder="Your comment" required></textarea>
                         <button class="hero-btn red-btn">POST COMMENT</button>
                     </form>
                 </div>
