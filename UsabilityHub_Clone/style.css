@@ -106,9 +106,6 @@ ul{
     /* color: white; */
 }
 
-.secondary-button{
-
-}
 
 /* top banner */
 
@@ -190,4 +187,52 @@ header{
 
 .logo{
     height: 46px;
+}
+
+/* features section */
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.features-header{
+    text-align: center;
+}
+
+.features-header h2{
+    margin-bottom: 20px;
+}
+
+.features-area{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.big-features-section{
+    padding: 30px var(--padding-inline-section) 0;
+
+}
+
+.big-feature-container{
+    gap: 30px;
+}
+
+.feature-img img{
+    width: 100%;
+}
+
+.feature-disc{
+    flex-direction: column;
+    align-items: flex-start;
 }
